@@ -1,0 +1,35 @@
+body {
+    background-color: #dcdcdc;
+}
+#generated-password{
+    font-size: 24px;
+}
+#numIncludeChecked:checked ~ #number-input{
+    display: inline-block;
+}
+#number-input{
+    display: none;
+}
+#symbolIncludeChecked:checked ~ #symbol-input{
+    display: inline-block;
+}
+#symbol-input{
+    display: none;
+}
+
+.form-group label{
+    font-size: 18px;
+    float: left;
+}
+.container {
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    max-width: 75%;
+}
+
+.xkcd-img {
+    height: 350px;
+}
