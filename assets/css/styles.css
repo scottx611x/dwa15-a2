@@ -27,9 +27,23 @@ body {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     text-align: center;
-    max-width: 75%;
+    max-width: 50%;
 }
 
 .xkcd-img {
     height: 350px;
+}
+
+#generated-password {
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    max-width: 100%;
+    overflow: auto;
+    border-radius: 25px;
 }
