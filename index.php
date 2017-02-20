@@ -27,6 +27,7 @@
                 <div class="form-group">
                     <label class="form-check-label">
                         Include a number: <input id='numIncludeChecked' type="checkbox" data-toggle="switch" value="true" class="form-check-input"/>
+                        <br>
                         <div id="number-input">
                             <label>Number to include in password:</label>
                             <input type="number" id='numIncluded'/>
@@ -37,6 +38,7 @@
 
                     <label class="form-check-label">
                         Include a symbol: <input id='symbolIncludeChecked' type="checkbox" data-toggle="switch" value="true" class="form-check-input"/>
+                        <br>
                         <div id="symbol-input">
                             <label>Symbol to include in password:</label>
                             <select id='symbolIncluded'>
