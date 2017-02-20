@@ -17,13 +17,13 @@
             <a href="https://xkcd.com/936/">
                 <img class="xkcd-img" src="https://imgs.xkcd.com/comics/password_strength.png"/>
             </a>
+            <br><br>
             <form>
                 <div class="form-group">
                     <label>
-                        Number of words:  <input type="number" id='numWords' required/>
+                        Number of words:  <input type="number" id='numWords'/>
                     </label>
                 </div>
-                <br><br>
                 <div class="form-group">
                     <label class="form-check-label">
                         Include a number: <input id='numIncludeChecked' type="checkbox" data-toggle="switch" value="true" class="form-check-input"/>
