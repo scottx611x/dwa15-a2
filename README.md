@@ -4,9 +4,3 @@
 
 ![screen shot 2017-02-23 at 9 36 35 pm](https://cloud.githubusercontent.com/assets/5629547/23288227/3d605c68-fa10-11e6-9785-107444461803.png)
 ![screen shot 2017-02-23 at 9 36 54 pm](https://cloud.githubusercontent.com/assets/5629547/23288228/3d64ca78-fa10-11e6-955f-73955075affc.png)
-
-
-TODO:
-
-- [ ] Cleanup form
-- [ ] Validate fields
