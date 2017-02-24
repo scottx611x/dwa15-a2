@@ -2,7 +2,9 @@
 
 <a href="http://a2.scott-ouellette.com">a2.scott-ouellette.com</a>
 
-<img width="1281" alt="screen shot 2017-02-20 at 11 15 31 am" src="https://cloud.githubusercontent.com/assets/5629547/23133112/f5adee12-f75d-11e6-942d-dbabe2c86bc6.png">
+![screen shot 2017-02-23 at 9 36 35 pm](https://cloud.githubusercontent.com/assets/5629547/23288227/3d605c68-fa10-11e6-9785-107444461803.png)
+![screen shot 2017-02-23 at 9 36 54 pm](https://cloud.githubusercontent.com/assets/5629547/23288228/3d64ca78-fa10-11e6-955f-73955075affc.png)
+
 
 TODO:
 
