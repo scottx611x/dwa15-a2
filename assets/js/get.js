@@ -15,26 +15,6 @@ $(document).ready(function(){
         var symbolIncludeChecked = $("#symbolIncludeChecked").prop('checked');
         var symbolIncluded = $("#symbolIncluded").val();
 
-        /*
-        //Client-side Validation code
-        if (numWords >= 10){
-            alert("You're way too paranoid. Try with >= 10 words!");
-            return;
-        }
-        if (numWords == 0){
-            alert("Number of words must be > 0!");
-            return;
-        }
-        if (!isInt(numWords)){
-            alert("Number of words must be a whole number for this to work!");
-            return;
-        }
-        if (numIncludeChecked && !isInt(numIncludeChecked)){
-            alert("Number to include must be a whole number for this to work!");
-            return;
-        }
-        */
-
         // Construct payload
         var payload = {
             numWords: numWords,
@@ -60,8 +40,5 @@ $(document).ready(function(){
             }
         });
     });
-    // function isInt(n) {
-    //     return n % 1 === 0;
-    // }
 });
 
