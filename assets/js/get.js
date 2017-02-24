@@ -15,7 +15,8 @@ $(document).ready(function(){
         var symbolIncludeChecked = $("#symbolIncludeChecked").prop('checked');
         var symbolIncluded = $("#symbolIncluded").val();
 
-        //Validate some stuff
+        /*
+        //Client-side Validation code
         if (numWords >= 10){
             alert("You're way too paranoid. Try with >= 10 words!");
             return;
@@ -32,8 +33,9 @@ $(document).ready(function(){
             alert("Number to include must be a whole number for this to work!");
             return;
         }
+        */
 
-        // Construct payload to POST
+        // Construct payload
         var payload = {
             numWords: numWords,
             numIncludeChecked: numIncludeChecked,
@@ -44,19 +46,22 @@ $(document).ready(function(){
 
         $.get("PasswordGen.php", payload
         ).done(function(data) {
-            var error = JSON.stringify(eval("(" + data + ")"));
-            if (!error["error"]) {
-                $("#generated-password").modal();
-                $("#pass-contatiner").text(data);
+            try {
+                var errorObj = eval("(" + data + ")");
+                if (errorObj["Error"]) {
+                    $("#generated-error").modal();
+                    $("#error-container").text(errorObj["Error"]);
+                    $("#user-input-container").text(errorObj["input_value"]);
+                }
             }
-            else{
-                $("#generated-error").modal();
-                $("#error-contatiner").text(error["error"]);
+            catch(err) {
+                $("#generated-password").modal();
+                $("#pass-container").text(data);
             }
         });
     });
-    function isInt(n) {
-        return n % 1 === 0;
-    }
+    // function isInt(n) {
+    //     return n % 1 === 0;
+    // }
 });
 

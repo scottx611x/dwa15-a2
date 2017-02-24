@@ -1,40 +1,27 @@
 body {
     background-color: #dcdcdc;
 }
-#generated-password{
+input{
+    max-width: 50px;
+}
+label {
     font-size: 24px;
 }
 #numIncludeChecked:checked ~ #number-input{
-    display: inline-block;
+    opacity: 1;
 }
 #number-input{
-    display: none;
+    opacity: 0;
 }
 #symbolIncludeChecked:checked ~ #symbol-input{
-    display: inline-block;
+    opacity: 1;
 }
 #symbol-input{
-    display: none;
+    opacity: 0;
 }
 
-.form-group label{
-    font-size: 18px;
-    float: left;
-}
-.container {
-    height: 100%;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    text-align: center;
-    max-width: 50%;
-}
-
-.xkcd-img {
-    height: 350px;
-}
-
-#generated-password {
+#generated-password, #generated-error{
+    font-size: 24px;
     height: 250px;
     margin: auto;
     position: absolute;
@@ -43,7 +30,15 @@ body {
     bottom: 0;
     right: 0;
     text-align: center;
-    max-width: 100%;
+    max-width: 33%;
     overflow: auto;
     border-radius: 25px;
+}
+.container {
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    max-width: 33%;
 }
