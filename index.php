@@ -44,7 +44,7 @@
                         </select>
                     </div>
                 </label>
-                    <br><br>
+                <br>
             </div>
             <button id="submit" class="btn btn-primary">Generate Password</button>
         </div>

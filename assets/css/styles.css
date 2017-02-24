@@ -2,11 +2,16 @@ body {
     background-color: #dcdcdc;
 }
 input{
-    max-width: 50px;
+    max-width: 100px;
 }
 label {
     font-size: 24px;
     min-width: 150px;
+}
+#submit {
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
 }
 #numIncludeChecked:checked ~ #number-input{
     opacity: 0;
