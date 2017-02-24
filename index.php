@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="assets/js/post.js" type="text/javascript"></script>
+        <script src="assets/js/get.js" type="text/javascript"></script>
     </head>
  	<body>
         <div class="container">
@@ -18,54 +18,56 @@
                 <img class="xkcd-img" src="https://imgs.xkcd.com/comics/password_strength.png"/>
             </a>
             <br><br>
-            <form>
-                <div class="form-group">
-                    <label>
-                        Number of words:  <input type="number" id='numWords'/>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label class="form-check-label">
-                        Include a number: <input id='numIncludeChecked' type="checkbox" data-toggle="switch" value="true" class="form-check-input"/>
-                        <br>
-                        <div id="number-input">
-                            <label>Number to include in password:</label>
-                            <input type="number" id='numIncluded'/>
-                        </div>
-                    </label>
+            <div class="inputs form-group">
+                <label>Number of words:  <input type="number" id='numWords'/></label>
+                <br>
+                <label>
+                    Include a number: <input id='numIncludeChecked' type="checkbox" data-toggle="switch" value="true"/>
 
+                    <div id="number-input">
+                        <label>Number to include in password:</label>
+                        <input type="number" id='numIncluded'/>
+                    </div>
+                </label>
+                <label>
+                    Include a symbol: <input id='symbolIncludeChecked' type="checkbox" data-toggle="switch" value="true"/>
+
+                    <div id="symbol-input">
+                        <label>Symbol to include in password:</label>
+                        <select id='symbolIncluded'>
+                            <option>!</option>
+                            <option>@</option>
+                            <option>#</option>
+                            <option>$</option>
+                            <option>%</option>
+                            <option>^</option>
+                        </select>
+                    </div>
+                </label>
                     <br><br>
-
-                    <label class="form-check-label">
-                        Include a symbol: <input id='symbolIncludeChecked' type="checkbox" data-toggle="switch" value="true" class="form-check-input"/>
-                        <br>
-                        <div id="symbol-input">
-                            <label>Symbol to include in password:</label>
-                            <select id='symbolIncluded'>
-                                <option>!</option>
-                                <option>@</option>
-                                <option>#</option>
-                                <option>$</option>
-                                <option>%</option>
-                                <option>^</option>
-                            </select>
-                        </div>
-                    </label>
-
-                    <br><br>
-                </div>
-                <button id="submit" class="btn btn-primary">Generate Password</button>
-            </form>
-
+            </div>
+            <button id="submit" class="btn btn-primary">Generate Password</button>
+        </div>
             <div id="generated-password" class="modal fade alert-success password-display">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Your Password is:</h4>
                 </div>
                 <br>
-                <div id="pass-contatiner" class="modal-body">
+                <div id="pass-container" class="modal-body">
                 </div>
             </div>
-        </div>
+            <div id="generated-error" class="modal fade alert-danger error-display">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Something bad happened:</h4>
+                </div>
+                <br>
+                <div id="error-container" class="modal-body">
+                </div>
+                <div id="user-input-container" class="modal-body">
+                </div>
+            </div>
+
 	</body>
 </html>
